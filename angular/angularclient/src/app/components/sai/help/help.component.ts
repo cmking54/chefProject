@@ -13,6 +13,7 @@ chefs;
 concerns;
   constructor(private cache: BackEndService) {
       this.cache.requestChefs(); // use to get fresh list on construstion
+      this.cache.requestConcerns();
 
   }
 
