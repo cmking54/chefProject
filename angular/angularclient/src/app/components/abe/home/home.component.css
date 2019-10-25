@@ -1,5 +1,9 @@
 .card-style {
+  position: absolute;
     border-radius: 10px;
+    opacity: 0.97;
+    left:120px;
+    top:-325px;
   }
 
   .submit-button {
