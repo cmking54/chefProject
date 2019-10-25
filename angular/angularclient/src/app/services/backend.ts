@@ -188,9 +188,16 @@ export class BackEndService implements BackEndMenu {
   requestUserLogin(email: string, password: string) {
     // UserRequest user = new UserRequest();
     this.http.post(this.baseUrl + this.userExt + "/login", this.getBlankUser(-1, "_", "_", "_", email, password, "_"), this.httpOptions)
-    .subscribe( result => { this.userCanLogin = true; },
+    .subscribe( err => { this.userCanLogin = true; },
                 err => { this.userCanLogin = false; } );
   }
+
+  // requestUserLogin(email: string, password: string, onSuccess) {
+  //   // UserRequest user = new UserRequest();
+  //   this.http.post(this.baseUrl + this.userExt + "/login", this.getBlankUser(-1, "_", "_", "_", email, password, "_"), this.httpOptions)
+  //   .subscribe( onSuccess,
+  //               err => { this.userCanLogin = false; } );
+  // }
   getUser() {
     // get all users cached
     return this.user;
