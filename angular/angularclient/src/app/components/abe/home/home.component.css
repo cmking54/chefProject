@@ -35,10 +35,21 @@
   }
 
 
-  .cardbody,h1{
-      color: black;
+  h1{
+    color: black;
+  
   }
 
-  h6,p{
+
+  h6{
+    font-size: 1.3vw;
+    font-weight: bold;
+    letter-spacing: 2px;
     color: black;
+  }
+
+  p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4vw;
   }
