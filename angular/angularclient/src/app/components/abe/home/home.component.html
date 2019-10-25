@@ -1,5 +1,4 @@
-<div class="container p-0">
-      <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
           <ol class="carousel-indicators">
             <li
               data-target="#carouselExampleCaptions"
@@ -9,31 +8,36 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../../assets/item.jpg" class="img-fluid" alt="..."/>
+          <div class="carousel-inner ">
+            <div class="carousel-item active container">
+              <img src="../../assets/item.jpg" class="img-fluid col" alt="..."/>
               <div class="carousel-caption d-none d-md-block">
-                  <div class="card card-style text-center" style="width: 35rem; height: 18rem;">
+                  <div class="card card-style  " style="width: 35rem; height: 18rem;">
                       <div class="card-body text-center">
                         <h1>How It Works!</h1>
-
+                         <h6 class="text-warning font-weight-bold">Step 1 </h6>
+                         <p>writting </p>
+                         <h6 class="text-warning font-weight-bold">Step 2</h6>
+                         <p>writting </p>
+                         <h6 class="text-warning font-weight-bold ">Step 3</h6>
+                         <p>writting </p>
                     </div>
                   </div>
               </div>
             </div>
-            <div class="carousel-item container-fluid">
+            <div class="carousel-item container">
               <img src="../../assets/request-chef.jpg" class="img-fluid" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-warning " routerlink = "/look">Request A Chef !</button>
+                  <button type="button" class="btn btn-warning " (click)="buttonTrigger()">Request A Chef !</button>
               </div>
             </div>
-            <div class="carousel-item container-fluid">
-              <img src="../../assets/item3.jpg" class="img-fluid" alt="..." />
+            <div class="carousel-item container">
+              <img src="../../assets/item3.jpg" class="w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-warning"  routerlink = "/" disabled>Register A Chef !</button>
+                  <button type="button" class="btn btn-warning "  routerlink = "/" disabled>Register A Chef !</button>
               </div>
             </div>
-          </div>
+          
           <a
             class="carousel-control-prev"
             href="#carouselExampleCaptions"
@@ -53,4 +57,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-</div>
+      </div>
+
+      
